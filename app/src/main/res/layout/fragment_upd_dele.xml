@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1B1B"
+    tools:context=".upd_dele"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/backup"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/saveup"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/titlev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="15"
+        android:hint="Note Title"
+        android:inputType="text"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textColorHighlight="#D6D6D6"
+        android:textColorHint="#BFB9B9"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveup" />
+
+
+    <EditText
+        android:id="@+id/notev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:textColor="@color/white"
+        android:textColorHighlight="#D6D6D6"
+        android:textColorHint="#BFB9B9"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlev" />
+    <Button
+        android:id="@+id/dele"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/delete"
+        app:layout_constraintStart_toStartOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="@+id/delete"
+        android:background="@drawable/buttons"
+        />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toStartOf="@+id/saveup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
